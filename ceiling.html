@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هندسة وتصميم الأسقف | Majestic Aura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- مكتبة Swiper للحركة -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ستايل إضافي مخصوص للصفحة دي عشان تظبط على الموبايل واللاب -->
+    <style>
+        .swiper-slide {
+            width: 320px; /* عرض الصورة على اللاب */
+            height: 480px; 
+            border-radius: 20px; /* حواف ناعمة جداً */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+        @media (max-width: 768px) {
+            .swiper-slide {
+                width: 260px; /* عرض الصورة على الموبايل */
+                height: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الهيدر الداخلي -->
+    <header class="inner-header">
+        <a href="index.html" class="back-btn">&rarr; عودة للرئيسية</a>
+        <h1 class="page-title">هندسة وتصميم الأسقف</h1>
+    </header>
+
+    <!-- المعرض الدائري -->
+    <section class="gallery-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-Z6SkQZnkwF9VDNBwla-Zhp1J5Cz6JwOxEvUeAVlqsJrghKJIh_mTwXNf3g6dJc1RIZtHB2eroaO4p08g-U0fkvwwGu-9z2zE5bN7UxgBP3p2NRTxEA60TNnVw3gM1Srv-geHDGotJD0_40REqL2KuwjmAtIo7eudEm6OsZ88ojKdYjnXzTCYfJXVS-Dm/s1600/Maj01.jpeg" alt="سقف 1" onclick="openLightbox(this.src)">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg34-hHxXGF6KAs4MnsjhCq8n_lokZvt6HbnNgaJHWrinO-K9qHBjLChgJkgxhGATTUCusHzrqwCzRizUBLvqT7egG8kDqJUQdteZNXZbMYgRcU6SVOSEzfLdw6iyw05JotNLV4BNWNG9weLYxY4wrIDvMbTxVRZwU6qOgMioYRAR5OcY9gJwc9dRq5pjQ3/s1600/WhatsApp%20Image%202026-10-15%20at%206.02.59%20PM.jpeg" alt="سقف 2" onclick="openLightbox(this.src)">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiribnvY7rFo2AiR90XzjclQ-7oEZadn0AW5GLUKGhBNt0XzIXtI2u7Vr5dJdGi4WGUs7iQezy0KwWI-WuHh_X-_q08CV1jZ3HMeXNuWosUu14YbRaU3YKJOsI_v9GxWHNqKQGVEhLBh-exUlvJhL30thK1FAbTvYDrUqZ092HHQyD1co8JPRe3EVmUhWEV/s1600/Siling%2005.jpeg" alt="سقف 3" onclick="openLightbox(this.src)">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3k21df226NnVgYl-YWLmhaSa-2vLPpoO9ZIP8xSW_1uhJHE1Qx8MYh9WZjewtLN5gwCvV_X48uL6jmypbwvshB54JA2-IzAOK0ri8zQ_ZeI4oHSOwstDRCVrBrfzrlu0s8uxrGqHRdqMh8Tn5KxubaatUGL2wCALDwXrnVlhhNqVnvlk1Nt0NjW_NjRMR/s1040/Silling%2001.jpeg" alt="سقف 4" onclick="openLightbox(this.src)">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuk0mXQjG2RF_u2i2HLi7ZAbpijrSgiIhMO6RyxuzybdnRQfPAsLRFw9l7DRtwr3W0bgP5s6uheqHBUye5QFhNb2UK4xejX_8pwY9XyN-aEIiNu5n-AgEVLa0sBCWiw7YLgZbvtN4WcUL6oZY5mvfnz_fZhyphenhyphenHiRKb3rACQYPB7S4JGXC-mOsxR5-6QRuDP/s1600/silling%2003.jpeg" alt="سقف 4" onclick="openLightbox(this.src)">
+                </div>
+
+            </div>
+            <!-- النقط السفلية -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- البوب أب (Lightbox) -->
+    <!-- ضفنا onclick هنا عشان لو العميل داس في أي حتة فاضية يخرج -->
+    <div id="imageLightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightboxImage" src="" alt="المعاينة">
+    </div>
+
+    <!-- أكواد الجافاسكريبت دمجناها هنا عشان تشتغل 100% -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // 1. تشغيل المعرض بنظام الساعة السمارت (Flat Coverflow)
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+                rotate: 0,       // خلينا الزاوية صفر عشان يبقى مسطح وعصري
+                stretch: 0,      // المسافة بين الكروت
+                depth: 150,      // العمق اللي بيخلي الصور الجانبية تصغر وترجع لورا
+                modifier: 2.5,   // قوة التأثير
+                slideShadows: true, // ظلال بتدي فخامة
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // 2. تشغيل البوب أب (تكبير الصورة)
+        const lightbox = document.getElementById("imageLightbox");
+        const lightboxImg = document.getElementById("lightboxImage");
+
+        function openLightbox(imageSrc) {
+            lightboxImg.src = imageSrc; // سحب الرابط
+            lightbox.classList.add("active"); // إظهار الشاشة
+        }
+
+        function closeLightbox(e) {
+            // لو العميل داس على الصورة نفسها متقفلش، تقفل بس لو داس على الـ X أو في الفراغ
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove("active");
+            }
+        }
+    </script>
+</body>
+</html>
